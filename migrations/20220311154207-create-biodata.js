@@ -13,11 +13,10 @@ module.exports = {
       },
       gender: {
         type: Sequelize.ENUM,
+        allowNull: true,
+        values: ['male', 'female', 'null'],
       },
-      dob: {
-        type: Sequelize.DATE,
-      },
-      status: {
+      email: {
         type: Sequelize.STRING,
       },
       createdAt: {
